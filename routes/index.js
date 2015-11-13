@@ -5,9 +5,11 @@ var router = express.Router();
 router.get('/', function(req, res) {
   var request = require('request')
   var reddit_base_url = 'https://reddit.com'
-  request(reddit_base_url+'/r/all.json', function(err, response, body){
+  var after = req.query.after
+  var request_url = reddit_base_url+'/r/all.json?'+(after ? 'after='+after : '')
+  request(request_url, function(err, response, body){
     body = JSON.parse(body)
-    res.render('index', { title: 'Express', posts: body.data.children });
+    res.render('index', { title: 'Express', posts: body.data.children, after: body.data.after });
   })
 });
 
