@@ -1,0 +1,31 @@
+{
+  "name": "Vireddita",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orion11/Vireddita.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orion11/Vireddita/issues"
+  },
+  "homepage": "https://github.com/orion11/Vireddita",
+  "dependencies": {
+    "body-parser": "~1.10.1",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.1.1",
+    "express": "~4.10.6",
+    "jade": "~1.8.2",
+    "morgan": "~1.5.1",
+    "request": "^2.65.0",
+    "serve-favicon": "~2.2.0"
+  }
+}
