@@ -5,7 +5,7 @@ function renderFavorites() {
     post: $("<li>").addClass("post"),
     thumbnail: $("<img>").addClass("thumbnail"),
     title: $("<a>").addClass("title"),
-    icon: $("<span>").addClass("favorite").append($("<i>").addClass("fa fa-circle")),
+    icon: $("<span>").addClass("favorite").append($("<i>").addClass("fa fa-star")),
     clone: function() {
       return {
         post: this.post.clone(),
@@ -25,7 +25,7 @@ function renderFavorites() {
       post.post.append(post.thumbnail)
     }
     post.post.append(post.title, post.icon)
-    dom.container.append(post)
+    dom.container.append(post.post)
   })
 }
 
