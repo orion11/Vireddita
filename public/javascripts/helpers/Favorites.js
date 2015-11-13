@@ -12,7 +12,7 @@ var Favorites = (function(){
         id : post.attr("id"),
         title : post.children(".title").text(),
         url: post.children(".title").attr("href"),
-        thumbnail: (!!post.children(".thumbnail").length ? post.children(".thumbnail") : '')
+        thumbnail: (!!post.children(".thumbnail").length ? post.children(".thumbnail").attr("src") : '')
       }
       favorites.data.push(data)
       favorites.ledger[data.id] = true
