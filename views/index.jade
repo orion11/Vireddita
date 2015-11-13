@@ -3,3 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  ul
+    each post in posts
+      li
+        if post.data.thrumbnail != "" && post.data.thumbnail != "self"
+          img(src=post.data.thumbnail)
+        a(href=post.data.url)= post.data.title
