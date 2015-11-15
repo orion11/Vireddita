@@ -9,7 +9,12 @@ $(".favorite").click(function(e){
   }
 })
 
-$("ul.favorites").sortable()
+$("ul.favorites")
+.sortable({opacity:.5, appendTo: document.body, axis: "y"})
+.on("sortstop", function(event, ui){
+  var id_list = $(this).sortable("toArray")
+  Favorites.sortByID(id_list)
+})
 
 
 function renderFavorites() {

@@ -27,6 +27,12 @@ var Favorites = (function(){
       save()
     },
     get: function(){ return favorites },
-    isFavorite: function(id) { return !!favorites.ledger[id] }
+    isFavorite: function(id) { return !!favorites.ledger[id] },
+    sortByID: function(id_list) {
+      favorites.data  = id_list.map(function(id){
+        return favorites.data.find(function(f){ return f.id == id })
+      })
+      save()
+    }
   }
 }())
