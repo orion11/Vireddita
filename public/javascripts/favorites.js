@@ -46,7 +46,7 @@ function renderFavorites() {
       post.thumbnail.attr("src", fav.thumbnail)
       post.post.append(post.thumbnail)
     }
-    post.post.append(post.title, post.icon, post.overlay)
+    post.post.append(post.title, post.overlay, post.icon)
     dom.container.append(post.post)
   })
 }

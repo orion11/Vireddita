@@ -11,9 +11,9 @@ block content
         if /^http|https/.test(post.data.thumbnail)
           img(src=post.data.thumbnail).thumbnail
         span.title= post.data.title
+        a(href=post.data.url).post-overlay
         span.favorite
           i.fa.fa-star-o.fa-lg
-        a(href=post.data.url).post-overlay
 
   if after
     a(href="?after=#{after}").pagination Next
