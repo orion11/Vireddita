@@ -10,3 +10,11 @@ $(".favorite").click(function(e){
     $this.attr("favorite",true).children("i").removeClass("fa-star-o").addClass("fa-star")
   }
 })
+
+// Mark any existing favorites
+$(".post").each(function(i, post){
+  var id = $(post).attr("id")
+  if( Favorites.isFavorite(id) ) {
+    $(this).children(".favorite").attr("favorite", true).children("i").removeClass("fa-star-o").addClass("fa-star")
+  }
+})
