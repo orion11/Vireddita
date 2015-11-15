@@ -17,7 +17,7 @@ function renderFavorites() {
     post: $("<li>").addClass("post"),
     thumbnail: $("<img>").addClass("thumbnail"),
     title: $("<a>").addClass("title"),
-    icon: $("<span>").addClass("favorite").append($("<i>").addClass("fa fa-star")),
+    icon: $("<span>").addClass("favorite").attr("favorite", true).append($("<i>").addClass("fa fa-star")),
     clone: function() {
       return {
         post: this.post.clone(),
