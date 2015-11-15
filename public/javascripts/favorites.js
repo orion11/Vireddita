@@ -10,7 +10,7 @@ $(".favorite").click(function(e){
 })
 
 $("ul.favorites")
-.sortable({opacity:.5, appendTo: document.body, axis: "y"})
+.sortable({opacity:.5, appendTo: document.body})
 .on("sortstop", function(event, ui){
   var id_list = $(this).sortable("toArray")
   Favorites.sortByID(id_list)
