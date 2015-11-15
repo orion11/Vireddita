@@ -26,6 +26,7 @@ var Favorites = (function(){
       delete favorites.ledger[id]
       save()
     },
-    get: function(){ return favorites }
+    get: function(){ return favorites },
+    isFavorite: function(id) { return !!favorites.ledger[id] }
   }
 }())
