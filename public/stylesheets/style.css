@@ -6,3 +6,57 @@ body {
 a {
   color: #00B7FF;
 }
+
+.post a {
+  text-decoration: none;
+}
+
+.post {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  list-style: none;
+  width: 150px;
+  height: 150px;
+}
+
+.post .thumbnail {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.post .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 140px;
+  color: white;
+  background: rgba(0,0,0,.6);
+  padding: 5px;
+  border-radius: 5px
+}
+
+.post .favorite {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  color: gold;
+  border: lightgrey solid 1px;
+  border-radius: 3px;
+  background: rgba(0,0,0, .2);
+  padding: 2px
+}
+
+.post .post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+}
+
+.post .post-overlay:hover {
+  background-color: rgba(255,255,255,.2);
+}
