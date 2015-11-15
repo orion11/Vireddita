@@ -5,6 +5,12 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     block local-head
   body
-    block content
+    header
+      span#logo Vireddita
+      nav
+        a(href="/") Home
+        a(href="/favorites") Favorites
+    #content
+      block content
     script(src="//code.jquery.com/jquery-1.11.3.min.js")
     block local-scripts
