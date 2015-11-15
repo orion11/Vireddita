@@ -1,7 +1,7 @@
 $(".favorite").click(function(e){
   var $this = $(this)
   var post = $this.parent(".post")
-  if( $(this).attr("favorite") ) {
+  if( $(this).attr("favorite") == "true" ) {
     Favorites.remove(post)
     $this.attr("favorite", false).children("i").removeClass("fa-star").addClass("fa-star-o")
   }

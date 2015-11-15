@@ -3,7 +3,7 @@ renderFavorites()
 $(".favorite").click(function(e){
   var $this = $(this)
   var post = $this.parent(".post")
-  if( $(this).attr("favorite") ) {
+  if( $(this).attr("favorite") == "true") {
     Favorites.remove(post)
     post.remove()
   }
