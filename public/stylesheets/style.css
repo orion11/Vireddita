@@ -1,10 +1,43 @@
 body {
-  padding: 50px;
+  padding: 0;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #FFFDF7; 
+}
+
+#content {
+  padding: 50px;
 }
 
 a {
   color: #00B7FF;
+}
+
+header {
+  background-color: #EAF9FF;
+  padding: 20px 50px;
+  box-shadow: 2px -1px 7px #888888;
+}
+
+header #logo {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+header nav {
+  display: inline-block;
+  float: right;
+}
+
+header nav a {
+  margin-left: 5px;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  vertical-align: middle;
+  border-radius: 3px;
+  background-color: #79A0FF;
+  text-shadow: -1px 1px grey;
 }
 
 .post a {
@@ -59,4 +92,15 @@ a {
 
 .post .post-overlay:hover {
   background-color: rgba(255,255,255,.2);
+}
+
+.pagination {
+  margin-left: 5px;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  vertical-align: middle;
+  border-radius: 3px;
+  background-color: #79A0FF;
+  text-shadow: -1px 1px grey;
 }
