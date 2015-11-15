@@ -1,3 +1,15 @@
+renderFavorites()
+
+$(".favorite").click(function(e){
+  var $this = $(this)
+  var post = $this.parent(".post")
+  if( $(this).attr("favorite") ) {
+    Favorites.remove(post)
+    post.remove()
+  }
+})
+
+
 function renderFavorites() {
   var favorites = Favorites.get()
   var dom = {
@@ -28,5 +40,3 @@ function renderFavorites() {
     dom.container.append(post.post)
   })
 }
-
-renderFavorites()
