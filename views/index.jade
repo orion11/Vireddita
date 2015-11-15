@@ -11,9 +11,11 @@ block content
       li(id="#{post.data.id}").post
         if /^http|https/.test(post.data.thumbnail)
           img(src=post.data.thumbnail).thumbnail
-        a(href=post.data.url).title= post.data.title
+        span.title= post.data.title
         span.favorite
-          i.fa.fa-star-o
+          i.fa.fa-star-o.fa-lg
+        a(href=post.data.url).post-overlay
+
   if after
     a(href="?after=#{after}") Next
 

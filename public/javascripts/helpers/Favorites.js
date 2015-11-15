@@ -11,7 +11,7 @@ var Favorites = (function(){
       var data = {
         id : post.attr("id"),
         title : post.children(".title").text(),
-        url: post.children(".title").attr("href"),
+        url: post.children(".post-overlay").attr("href"),
         thumbnail: (!!post.children(".thumbnail").length ? post.children(".thumbnail").attr("src") : '')
       }
       favorites.data.push(data)
