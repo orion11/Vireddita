@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
   var request_url = reddit_base_url+'/r/all.json?'+(after ? 'after='+after : '')
   request(request_url, function(err, response, body){
     body = JSON.parse(body)
-    res.render('index', { title: 'Express', posts: body.data.children, after: body.data.after });
+    res.render('index', { title: 'Vireddita', posts: body.data.children, after: body.data.after });
   })
 });
 
