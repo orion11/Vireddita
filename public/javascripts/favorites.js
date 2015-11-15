@@ -9,6 +9,8 @@ $(".favorite").click(function(e){
   }
 })
 
+$("ul.favorites").sortable()
+
 
 function renderFavorites() {
   var favorites = Favorites.get()
