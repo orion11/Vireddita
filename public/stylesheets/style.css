@@ -2,11 +2,14 @@ body {
   padding: 0;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #FFFDF7; 
+  background: #F5F5F5; 
 }
 
 #content {
-  padding: 50px;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #FBFBFB;
 }
 
 a {
@@ -14,7 +17,7 @@ a {
 }
 
 header {
-  background-color: #EAF9FF;
+  background-color: #8D969A;
   padding: 20px 50px;
   box-shadow: 2px -1px 7px #888888;
 }
@@ -22,6 +25,7 @@ header {
 header #logo {
   font-size: 2em;
   font-weight: 900;
+  text-shadow: 2px -1px #A6AACC, -2px -1px #968C8C;
 }
 
 header nav {
@@ -35,6 +39,7 @@ header nav a {
   padding: 10px;
   color: white;
   vertical-align: middle;
+  border: 1px solid #968C8C;
   border-radius: 3px;
   background-color: #79A0FF;
   text-shadow: -1px 1px grey;
