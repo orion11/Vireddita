@@ -1,4 +1,7 @@
 # Vireddita
-Install Node.js
+Requires Node.js & npm
 
+To start app:
+
+npm install
 npm start
