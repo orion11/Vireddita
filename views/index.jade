@@ -15,8 +15,10 @@ block content
         span.favorite
           i.fa.fa-star-o.fa-lg
 
-  if after
-    a(href="?after=#{after}").pagination Next
+  if pagination.before
+    a(href="?before=#{pagination.before}&count=#{pagination.count.new.before}").pagination Prev
+  if pagination.after
+    a(href="?after=#{pagination.after}&count=#{pagination.count.new.after}").pagination Next
 
 block local-scripts
   script(src="/javascripts/helpers/Favorites.js")
